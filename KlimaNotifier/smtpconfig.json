@@ -1,0 +1,8 @@
+{
+  "Host": "smtp.example.com",
+  "Port": 587,
+  "User": "your-user@example.com",
+  "Password": "change-me",
+  "FromEmail": "your-user@example.com",
+  "EnableSsl": true
+}
