@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTU Hesaplayıcı (Türkiye Uyumlu)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Klima BTU Hesaplayıcı</h1>
+        <p>
+          Türkiye iklim koşullarına uygun, detaylı ve Türkçe bir ön hesaplama aracı.
+          Sonuçlar <strong>yaklaşık değer</strong> verir; kesin seçim için yetkili keşif
+          önerilir.
+        </p>
+      </header>
+
+      <form id="btu-form" class="card">
+        <h2>Oda Bilgileri</h2>
+        <div class="grid">
+          <label>
+            Oda alanı (m²)
+            <input type="number" id="area" min="5" max="200" step="0.1" required />
+          </label>
+
+          <label>
+            Tavan yüksekliği (m)
+            <input type="number" id="height" min="2" max="5" step="0.1" value="2.7" required />
+          </label>
+
+          <label>
+            Şehir / Bölge
+            <select id="climate" required>
+              <option value="cool">Serin Bölge (Erzurum, Kars, Sivas vb.)</option>
+              <option value="mild" selected>Ilıman Bölge (İstanbul, Ankara, Bursa vb.)</option>
+              <option value="hot">Sıcak Bölge (Adana, Antalya, İzmir, Mersin vb.)</option>
+            </select>
+          </label>
+
+          <label>
+            Cephe / Güneş alma
+            <select id="orientation" required>
+              <option value="low">Az güneş (kuzey, gölge)</option>
+              <option value="normal" selected>Orta (doğu/batı, kısmi güneş)</option>
+              <option value="high">Yoğun güneş (güney, uzun süre direkt güneş)</option>
+            </select>
+          </label>
+
+          <label>
+            Yalıtım durumu
+            <select id="insulation" required>
+              <option value="good">İyi (mantolama + çift cam)</option>
+              <option value="average" selected>Orta</option>
+              <option value="poor">Zayıf (yalıtımsız / eski doğrama)</option>
+            </select>
+          </label>
+
+          <label>
+            Oda tipi
+            <select id="roomType" required>
+              <option value="bedroom">Yatak odası</option>
+              <option value="living" selected>Salon / Oturma odası</option>
+              <option value="kitchen">Mutfak</option>
+              <option value="office">Çalışma odası / Ofis</option>
+            </select>
+          </label>
+
+          <label>
+            Kişi sayısı
+            <input type="number" id="people" min="1" max="15" value="2" required />
+          </label>
+
+          <label>
+            Elektronik/ısı yayan cihaz yoğunluğu
+            <select id="appliances" required>
+              <option value="low">Düşük (TV + temel cihazlar)</option>
+              <option value="medium" selected>Orta</option>
+              <option value="high">Yüksek (çok cihaz / bilgisayar / profesyonel ekipman)</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit">BTU Hesapla</button>
+      </form>
+
+      <section id="result" class="card hidden" aria-live="polite">
+        <h2>Hesap Sonucu</h2>
+        <p id="btu-output"></p>
+        <p id="kw-output"></p>
+        <p id="recommendation"></p>
+        <details>
+          <summary>Hesap Detaylarını Göster</summary>
+          <ul id="breakdown"></ul>
+        </details>
+      </section>
+
+      <section class="card note">
+        <h2>Notlar</h2>
+        <ul>
+          <li>Bu araç yaklaşık kapasite belirlemek içindir.</li>
+          <li>
+            Açık mutfak, geniş cam yüzey, çatı katı veya sürekli kalabalık kullanım
+            varsa bir üst kapasite tercih edilebilir.
+          </li>
+          <li>
+            İnverter klima seçimi ve doğru montaj, enerji verimliliği için en az BTU
+            kadar önemlidir.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
