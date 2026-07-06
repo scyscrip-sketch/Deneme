@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Şişçi Ateş | Odun Ateşinde Şiş & Kebap</title>
-  <meta name="description" content="Şişçi Ateş — odun ateşinde pişen enfes şiş, kebap ve mangal lezzetleri. Adana, Urfa, tavuk şiş ve daha fazlası." />
+
+  <!-- ===== SEO: Antalya / Kepez / Şehir Hastanesi odaklı ===== -->
+  <title>Şişçi Ateş | Antalya Kepez Burdur Şiş & Kebap – Şehir Hastanesi Yakını</title>
+  <meta name="description" content="Şişçi Ateş – Has Burdur Şiş. Antalya Kepez Çankaya'da, Antalya Şehir Hastanesi'ne yakın konumda odun ateşinde pişen meşhur Burdur şiş, kebap ve pide. Hijyenik, taze ve kaliteli lezzetler. Paket servis: 0555 556 15 07." />
+  <meta name="keywords" content="Antalya şişçi, Kepez şiş, Burdur şiş Antalya, Antalya şehir hastanesi yemek, Çankaya kebap, odun ateşinde şiş, Antalya paket kebap, Kepez pide, Şişçi Ateş, Has Burdur Şiş" />
+  <meta name="author" content="Şişçi Ateş" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="TR-07" />
+  <meta name="geo.placename" content="Kepez, Antalya" />
+  <meta name="geo.position" content="36.954694;30.678088" />
+  <meta name="ICBM" content="36.954694, 30.678088" />
   <meta name="theme-color" content="#0d0b0a" />
 
-  <!-- Open Graph / Sosyal medya paylaşımı -->
-  <meta property="og:title" content="Şişçi Ateş | Odun Ateşinde Şiş & Kebap" />
-  <meta property="og:description" content="Odun ateşinde pişen enfes şiş, kebap ve mangal lezzetleri." />
-  <meta property="og:type" content="website" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Şişçi Ateş | Antalya Kepez Burdur Şiş & Kebap" />
+  <meta property="og:description" content="Antalya Şehir Hastanesi'ne yakın, odun ateşinde pişen meşhur Burdur şiş ve kebap lezzetleri." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <link rel="canonical" href="https://sisciates.com/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +30,38 @@
 
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E" />
+
+  <!-- ===== Yapısal veri: Yerel işletme (Google için) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Şişçi Ateş - Has Burdur Şiş",
+    "description": "Antalya Kepez'de, Antalya Şehir Hastanesi'ne yakın konumda odun ateşinde pişen meşhur Burdur şiş, kebap ve pide.",
+    "servesCuisine": ["Turkish", "Kebab", "Burdur Şiş", "Pide"],
+    "telephone": "+905555561507",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Çankaya Mah. Barış Manço Bulvarı No:277",
+      "addressLocality": "Kepez",
+      "addressRegion": "Antalya",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.954694,
+      "longitude": 30.678088
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "11:00",
+      "closes": "23:00"
+    },
+    "sameAs": ["https://www.instagram.com/sisciates"]
+  }
+  </script>
 </head>
 <body>
 
@@ -31,10 +75,11 @@
 
       <nav class="nav-links" id="navLinks">
         <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#kalite">Kalite &amp; Hijyen</a>
         <a href="#menu">Menü</a>
         <a href="#galeri">Galeri</a>
         <a href="#iletisim">İletişim</a>
-        <a href="https://www.instagram.com/sisciates" target="_blank" rel="noopener" class="nav-cta">Instagram</a>
+        <a href="tel:+905555561507" class="nav-cta">📞 0555 556 15 07</a>
       </nav>
 
       <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat">
@@ -47,47 +92,96 @@
   <section class="hero" id="hero">
     <div class="hero-embers" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="hero-eyebrow">ODUN ATEŞİNDE • MANGAL KEYFİ</p>
+      <p class="hero-eyebrow">ODUN ATEŞİNDE • HAS BURDUR ŞİŞ</p>
       <h1 class="hero-title">Şişçi <span>Ateş</span></h1>
-      <p class="hero-sub">Közün üzerinde, ustanın elinde pişen gerçek şiş &amp; kebap lezzeti. Her lokmada dumanın ve ateşin tadı.</p>
+      <p class="hero-slogan">Ateşin Lezzeti, Şişte Mükemmel!</p>
+      <p class="hero-sub">Antalya Kepez'de, <strong>Şehir Hastanesi'ne yakın</strong> konumda; dana kaburga etinden, katkısız ve odun ateşinde ağır ağır pişen <strong>meşhur Burdur şiş</strong>. Geleneksel lezzet, usta elden.</p>
       <div class="hero-actions">
         <a href="#menu" class="btn btn-primary">Menüyü Gör</a>
-        <a href="#iletisim" class="btn btn-ghost">Rezervasyon &amp; Sipariş</a>
+        <a href="https://wa.me/905555561507" target="_blank" rel="noopener" class="btn btn-ghost">💬 Sipariş &amp; Rezervasyon</a>
       </div>
       <div class="hero-badges">
-        <span>🔥 Odun Ateşi</span>
-        <span>🥩 Günlük Taze Et</span>
-        <span>⭐ Usta İşi</span>
+        <span>🔥 Odun Ateşinde Pişirme</span>
+        <span>🥩 %100 Yerli &amp; Taze Et</span>
+        <span>⚡ Hızlı, Sıcak Servis</span>
       </div>
     </div>
     <a href="#hakkimizda" class="hero-scroll" aria-label="Aşağı kaydır">↓</a>
   </section>
 
+  <!-- ===== YENİ AÇILDI ŞERİDİ ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>🔥 ANTALYA'DA YENİ AÇILDI</span><span>•</span>
+      <span>HAS BURDUR ŞİŞ</span><span>•</span>
+      <span>ODUN ATEŞİNDE EŞSİZ LEZZET</span><span>•</span>
+      <span>ŞEHİR HASTANESİ'NE YAKIN</span><span>•</span>
+      <span>🔥 ANTALYA'DA YENİ AÇILDI</span><span>•</span>
+      <span>HAS BURDUR ŞİŞ</span><span>•</span>
+      <span>ODUN ATEŞİNDE EŞSİZ LEZZET</span><span>•</span>
+      <span>ŞEHİR HASTANESİ'NE YAKIN</span><span>•</span>
+    </div>
+  </div>
+
   <!-- ===== HAKKIMIZDA ===== -->
   <section class="section about" id="hakkimizda">
     <div class="container about-grid">
       <div class="about-media">
-        <div class="about-photo photo-slot" data-label="Mangal / Ateş Fotoğrafı">
+        <div class="about-photo photo-slot" data-label="Ekip / Mekan Fotoğrafı — gorseller/ekip.jpg">
           <svg viewBox="0 0 200 200" class="illus"><use href="#illus-grill"></use></svg>
         </div>
       </div>
       <div class="about-text">
         <span class="kicker">Hakkımızda</span>
-        <h2>Ateşin ve Lezzetin Buluştuğu Yer</h2>
+        <h2>Burdur'un Tescilli Lezzeti, Artık Antalya'da</h2>
         <p>
-          Şişçi Ateş'te her şey doğru etle ve gerçek odun ateşiyle başlar. Şişlerimizi
-          günlük hazırlar, közün üzerinde ustalıkla pişirir; o eşsiz duman aromasını
-          sofranıza taşırız. Amacımız basit: sade, samimi ve bol lezzetli bir mangal keyfi.
+          <strong>Şişçi Ateş</strong>, Burdur'un yüzyıllara dayanan şiş geleneğini Antalya Kepez'e taşıyor.
+          Meşhur Burdur şişimiz; dana etinin özenle seçilen kaburga kısmından, <strong>soğan, salça ve
+          baharat katılmadan</strong>, tamamen katkısız olarak hazırlanır. Sakatatsız, saf etin yoğun
+          lezzeti bu yüzden bambaşkadır.
         </p>
         <p>
-          İster paket sipariş, ister masamızda; her lokmada aynı özeni hissedeceksiniz.
+          Şişlerimiz gerçek <strong>odun ateşinde ağır ağır</strong> pişer; dışı çıtır, içi yumuşacık kalır.
+          Yanında sıcacık odun fırını pidemiz ve mevsim tabaklarımızla, Burdur sofralarının o samimi
+          tadını sunarız.
         </p>
-        <ul class="about-list">
-          <li>✔ Günlük taze ve özenle seçilmiş et</li>
-          <li>✔ Gerçek odun/kömür ateşinde pişirme</li>
-          <li>✔ El yapımı köfte ve marine tavuk</li>
-          <li>✔ Sıcak servis, hızlı paket</li>
-        </ul>
+        <p class="about-loc">
+          📍 <strong>Antalya Şehir Hastanesi'ne yürüme mesafesinde</strong> — Çankaya Mah. Barış Manço Bulvarı,
+          Kepez / Antalya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KALİTE & HİJYEN ===== -->
+  <section class="section quality" id="kalite">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Kalite &amp; Hijyen</span>
+        <h2>Güvenle, Temizce, İştahla</h2>
+        <p class="section-lead">Tüm ürünlerimiz ve çeşitlerimiz; hijyen ve mevzuatta yazılı pişirme şartlarına uygun olarak hazırlanır.</p>
+      </div>
+      <div class="quality-grid">
+        <div class="q-card">
+          <div class="q-icon">🧼</div>
+          <h3>Hijyen Önce Gelir</h3>
+          <p>Mutfağımız ve tezgâhlarımız gün boyu titizlikle temizlenir. Gıda güvenliği kurallarına eksiksiz uyarız.</p>
+        </div>
+        <div class="q-card">
+          <div class="q-icon">🥩</div>
+          <h3>Günlük Taze Et</h3>
+          <p>%100 yerli, günlük temin edilen dana eti. Şişlerimizi taptaze, katkısız hazırlar; bekletmeyiz.</p>
+        </div>
+        <div class="q-card">
+          <div class="q-icon">🔥</div>
+          <h3>Doğru Pişirme</h3>
+          <p>Gerçek odun ateşinde, mevzuata uygun sürelerde ve doğru ısıda pişirme. Ne çiğ, ne fazla — tam kıvamında.</p>
+        </div>
+        <div class="q-card">
+          <div class="q-icon">😊</div>
+          <h3>Müşteri Memnuniyeti</h3>
+          <p>Sıcak servis, güler yüz ve tutarlı lezzet. Her ziyaretinizde aynı kaliteyi hissedeceksiniz.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -98,44 +192,14 @@
       <div class="section-head">
         <span class="kicker">Menümüz</span>
         <h2>Ateşten Sofraya</h2>
-        <p class="section-lead">Fiyatlar ve ürünler örnek olarak eklenmiştir — kendi menünüzle güncelleyebilirsiniz.</p>
+        <p class="section-lead">Ürünlerimizin tamamı Burdur mutfağının geleneğinden gelir. Odun ateşinde, ustanın elinde.</p>
       </div>
 
-      <div class="menu-cols">
-        <div class="menu-card">
-          <h3 class="menu-cat">🔥 Şişler &amp; Kebaplar</h3>
-          <ul class="menu-items">
-            <li><span class="mi-name">Adana Şiş <em>(acılı)</em></span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Urfa Şiş <em>(acısız)</em></span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Kuzu Şiş</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Tavuk Şiş</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Tavuk Kanat</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Karışık Izgara</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <h3 class="menu-cat">🥙 Dürüm &amp; Porsiyon</h3>
-          <ul class="menu-items">
-            <li><span class="mi-name">Adana Dürüm</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Tavuk Dürüm</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Köfte Dürüm</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Şiş Porsiyon</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Lavaş Arası</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <h3 class="menu-cat">🥗 Yanında &amp; İçecek</h3>
-          <ul class="menu-items">
-            <li><span class="mi-name">Mevsim Salata</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Ezme / Közleme</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Közde Patlıcan</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Ayran</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-            <li><span class="mi-name">Şalgam / Kola</span><span class="mi-dots"></span><span class="mi-price">₺---</span></li>
-          </ul>
-        </div>
+      <div class="menu-cols" id="menuCols">
+        <!-- Menü JS ile doldurulur (js/main.js) -->
       </div>
+
+      <p class="menu-note">🔺 Tüm ürünlerimiz ve çeşitlerimiz, hijyen ve mevzuatta yazılı pişirme şartlarına uygun hazırlanmaktadır.</p>
     </div>
   </section>
 
@@ -144,13 +208,11 @@
     <div class="container">
       <div class="section-head">
         <span class="kicker">Galeri</span>
-        <h2>Instagram'dan Kareler</h2>
-        <p class="section-lead">Aşağıdaki alanlara <strong>@sisciates</strong> hesabındaki fotoğraflarınızı ekleyebilirsiniz.</p>
+        <h2>Ateşten Kareler</h2>
+        <p class="section-lead"><strong>@sisciates</strong> lezzetlerinden bir seçki.</p>
       </div>
 
-      <div class="gallery-grid" id="galleryGrid">
-        <!-- Fotoğraf alanları JS ile doldurulur -->
-      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
 
       <div class="gallery-cta">
         <a href="https://www.instagram.com/sisciates" target="_blank" rel="noopener" class="btn btn-primary">
@@ -166,20 +228,20 @@
       <div class="contact-info">
         <span class="kicker">İletişim</span>
         <h2>Bize Ulaşın</h2>
-        <p class="section-lead">Aşağıdaki bilgileri kendi işletmenize göre güncelleyin.</p>
+        <p class="section-lead">Antalya Şehir Hastanesi'ne yakın, Kepez'deyiz. Paket servis için arayın!</p>
 
         <ul class="contact-list">
           <li>
             <span class="ci-icon">📍</span>
-            <div><strong>Adres</strong><br><span class="editable">Adres bilgisi ekleyin</span></div>
+            <div><strong>Adres</strong><br>Çankaya Mah. Barış Manço Bulvarı No:277<br>Kepez / Antalya <em>(Şehir Hastanesi yakını)</em></div>
           </li>
           <li>
             <span class="ci-icon">📞</span>
-            <div><strong>Telefon / Sipariş</strong><br><a href="tel:+900000000000" class="editable">0 (___) ___ __ __</a></div>
+            <div><strong>Telefon &amp; WhatsApp</strong><br><a href="tel:+905555561507">0555 556 15 07</a></div>
           </li>
           <li>
             <span class="ci-icon">🕒</span>
-            <div><strong>Çalışma Saatleri</strong><br><span class="editable">Her gün 11:00 – 23:00</span></div>
+            <div><strong>Çalışma Saatleri</strong><br>Her gün 11:00 – 23:00</div>
           </li>
           <li>
             <span class="ci-icon">📷</span>
@@ -188,16 +250,17 @@
         </ul>
 
         <div class="contact-actions">
-          <a href="tel:+900000000000" class="btn btn-primary">📞 Hemen Ara</a>
-          <a href="https://wa.me/900000000000" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 WhatsApp</a>
+          <a href="tel:+905555561507" class="btn btn-primary">📞 Hemen Ara</a>
+          <a href="https://wa.me/905555561507" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 WhatsApp</a>
         </div>
       </div>
 
       <div class="contact-map">
-        <div class="map-slot photo-slot" data-label="Harita / Konum (Google Maps embed)">
-          <svg viewBox="0 0 200 200" class="illus"><use href="#illus-pin"></use></svg>
-          <p>Google Haritalar konumunuzu buraya ekleyebilirsiniz.</p>
-        </div>
+        <iframe
+          title="Şişçi Ateş - Has Burdur Şiş Konumu"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.176162196241!2d30.678087999999995!3d36.95469399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c38f0fde5e3095%3A0x784558bf6f831288!2zSGFzIEJ1cmR1ciDFnmnFnyDFnmnFn8OnaSBBdGXFnw!5e1!3m2!1str!2str!4v1783351758331!5m2!1str!2str"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
     </div>
   </section>
@@ -207,22 +270,27 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-flame">🔥</span> Şişçi <strong>Ateş</strong>
-        <p>Odun ateşinde pişen gerçek lezzet.</p>
+        <p>Has Burdur Şiş — Odun ateşinde gerçek lezzet.<br>Kepez / Antalya</p>
       </div>
       <div class="footer-links">
         <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#kalite">Kalite &amp; Hijyen</a>
         <a href="#menu">Menü</a>
         <a href="#galeri">Galeri</a>
         <a href="#iletisim">İletişim</a>
       </div>
       <div class="footer-social">
-        <a href="https://www.instagram.com/sisciates" target="_blank" rel="noopener" aria-label="Instagram">📷 Instagram</a>
+        <a href="tel:+905555561507">📞 0555 556 15 07</a>
+        <a href="https://www.instagram.com/sisciates" target="_blank" rel="noopener">📷 @sisciates</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">© <span id="year"></span> Şişçi Ateş. Tüm hakları saklıdır.</div>
+      <div class="container">© <span id="year"></span> Şişçi Ateş · Has Burdur Şiş — Kepez / Antalya. Tüm hakları saklıdır.</div>
     </div>
   </footer>
+
+  <!-- Sabit sipariş butonu (mobil) -->
+  <a href="https://wa.me/905555561507" target="_blank" rel="noopener" class="fab" aria-label="WhatsApp ile sipariş">💬</a>
 
   <!-- Gizli SVG illüstrasyonlar -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -240,10 +308,6 @@
         <path d="M100 84c-7-12 5-19 0-31 12 7 14 19 7 31z"/>
         <path d="M140 88c-6-10 4-16 0-26 10 6 12 16 6 26z"/>
       </g>
-    </symbol>
-    <symbol id="illus-pin" viewBox="0 0 200 200">
-      <path d="M100 30c-26 0-46 20-46 46 0 34 46 74 46 74s46-40 46-74c0-26-20-46-46-46z" fill="#e8552d"/>
-      <circle cx="100" cy="76" r="18" fill="#fff"/>
     </symbol>
   </svg>
 

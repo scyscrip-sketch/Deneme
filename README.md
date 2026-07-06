@@ -1,47 +1,43 @@
-# 🔥 Şişçi Ateş — Web Sitesi
+# 🔥 Şişçi Ateş — Has Burdur Şiş | Web Sitesi
 
-[@sisciates](https://www.instagram.com/sisciates) için hazırlanmış modern, tek sayfa (one-page) restoran web sitesi. Odun ateşi / köz temalı, tamamen mobil uyumlu.
+Antalya Kepez'de, **Antalya Şehir Hastanesi'ne yakın** konumdaki [@sisciates](https://www.instagram.com/sisciates) işletmesi için modern, tek sayfa (one-page) restoran web sitesi. Odun ateşi temalı, tamamen mobil uyumlu ve yerel SEO'ya (Antalya / Kepez / Şehir Hastanesi) göre optimize edilmiştir.
 
 ## 📁 Dosya Yapısı
 
 ```
 .
-├── index.html          # Ana sayfa (tüm bölümler)
+├── index.html          # Ana sayfa (tüm bölümler + SEO + harita)
 ├── css/styles.css      # Tasarım / stil
 ├── js/main.js          # Menü, galeri, animasyonlar
 └── gorseller/          # Fotoğraflarınızı buraya koyun
 ```
 
-## 🚀 Nasıl Çalıştırılır?
+## ✅ Sitede Hazır Olanlar
 
-`index.html` dosyasına çift tıklayın — tarayıcıda açılır. Sunucuya yüklemek için tüm klasörü hosting'e (Netlify, GitHub Pages, cPanel vb.) atmanız yeterli.
+- **Gerçek menü** (fiyatsız, iştah açıcı açıklamalarla) — Burdur şiş, kebaplar, odun fırını pideleri, çorbalar, tatlılar, içecekler
+- **İletişim:** Çankaya Mah. Barış Manço Bulvarı No:277, Kepez / Antalya — Tel & WhatsApp **0555 556 15 07**
+- **Google Haritalar** konumu gömülü
+- **SEO:** Antalya / Kepez / Şehir Hastanesi anahtar kelimeleri + Google için yapısal veri (JSON-LD)
+- **Kalite & Hijyen** bölümü (temizlik, taze et, doğru pişirme, müşteri memnuniyeti)
 
-### GitHub Pages ile yayınlama
-1. Repo → **Settings → Pages**
-2. Branch: `main` (veya bu branch) → **Save**
-3. Birkaç dakika sonra `https://<kullanıcı>.github.io/<repo>` adresinde yayında.
+## 📷 Fotoğraf Ekleme (tek eksik adım)
 
-## 📷 Instagram Fotoğraflarını Ekleme
+Instagram, fotoğrafların otomatik indirilmesini engellediği için görselleri koda gömemedim. Eklemek çok kolay:
 
-> **Not:** Instagram, fotoğrafların otomatik indirilmesini engellediği için görselleri koda gömemedim. Fotoğrafları kendiniz ekleyeceksiniz — çok kolay:
-
-1. Instagram'daki fotoğrafları kaydedin.
-2. `gorseller/` klasörüne kopyalayın (`1.jpg`, `2.jpg` ...).
-3. `js/main.js` içindeki `galleryPhotos` listesinde `img: ''` kısmını doldurun:
+1. Instagram/flyer fotoğraflarını `gorseller/` klasörüne kopyalayın (`1.jpg`, `burdur-sis.jpg` ...).
+2. `js/main.js` içindeki `GALLERY` listesinde `img: ''` kısmını doldurun:
    ```js
-   { img: 'gorseller/1.jpg', alt: 'Adana şiş' },
+   { img: 'gorseller/burdur-sis.jpg', alt: 'Meşhur Burdur Şiş' },
    ```
+3. Hakkımızda bölümündeki büyük fotoğraf için `index.html` içinde `about-photo` alanına
+   `<img src="gorseller/ekip.jpg" alt="Şişçi Ateş ekibi">` ekleyin.
 
-## ✏️ Güncellenmesi Gerekenler
+## 🚀 Yayınlama
 
-Sitede yer tutucu (placeholder) olarak bırakılan alanlar:
+`index.html` dosyasını çift tıklayarak tarayıcıda açabilirsiniz. Yayına almak için tüm klasörü bir hosting'e (Netlify, GitHub Pages, cPanel) yükleyin.
 
-- **Menü fiyatları** — `index.html` içinde `₺---` yazan yerler
-- **Telefon numarası** — `tel:+900000000000` ve `wa.me/900000000000`
-- **Adres & çalışma saatleri** — İletişim bölümü
-- **Google Haritalar** — İletişim bölümündeki harita alanı
-
-Bu bilgileri bana iletirseniz sizin için otomatik doldurabilirim.
+### GitHub Pages
+Repo → **Settings → Pages** → Branch seçin → **Save**.
 
 ---
-Odun ateşinde pişen gerçek lezzet. 🔥
+Has Burdur Şiş — Odun ateşinde gerçek lezzet. 🔥 · Kepez / Antalya
